@@ -9,6 +9,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "@/config/firebase";
+import { signIn } from "next-auth/react";
 
 const SignUp: React.FC = () => {
 	const [showPassword1, setShowPassword1] = useState(false);
@@ -194,9 +195,9 @@ const SignUp: React.FC = () => {
 					<div className="flex-1 border-t border-gray-300"></div>
 				</div>
 				<div className="my-4 flex space-x-4">
-					<Link
-						href=""
-						className="w-full py-2 items-center justify-center flex rounded-md bg-gray-100"
+					<div
+						onClick={() => signIn("google", { callbackUrl: "/" })}
+						className="w-full py-2 items-center justify-center flex rounded-md bg-gray-100 cursor-pointer"
 					>
 						<Image
 							src={"/googleIcon.svg"}
@@ -205,10 +206,10 @@ const SignUp: React.FC = () => {
 							height={100}
 							className="w-8 h-8"
 						/>
-					</Link>
-					<Link
-						href=""
-						className="w-full bg-gray-100 py-2 items-center justify-center flex rounded-md"
+					</div>
+					<div
+						onClick={() => signIn("github", { callbackUrl: "/" })}
+						className="w-full bg-gray-100 py-2 items-center justify-center flex rounded-md cursor-pointer"
 					>
 						<Image
 							src={"/githubIcon.svg"}
@@ -217,10 +218,10 @@ const SignUp: React.FC = () => {
 							height={100}
 							className="w-8 h-8"
 						/>
-					</Link>
-					<Link
-						href=""
-						className="w-full bg-gray-100 py-2 items-center justify-center flex rounded-md"
+					</div>
+					<div
+						onClick={() => signIn("facebook", { callbackUrl: "/" })}
+						className="w-full bg-gray-100 py-2 items-center justify-center flex rounded-md cursor-pointer"
 					>
 						<Image
 							src={"/facebook.svg"}
@@ -229,7 +230,7 @@ const SignUp: React.FC = () => {
 							height={100}
 							className="w-8 h-8"
 						/>
-					</Link>
+					</div>
 				</div>
 				<div className="flex flex-col space-y-4 pt-4">
 					<Link

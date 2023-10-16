@@ -5,6 +5,7 @@ const nextConfig = {
 			"lh3.googleusercontent.com",
 			"avatars.githubusercontent.com",
 			"scontent.facc1-1.fna.fbcdn.net",
+			"scontent.facc6-1.fna.fbcdn.net",
 			"img.freepik.com",
 			"images.pexels.com",
 			"i.ibb.co",

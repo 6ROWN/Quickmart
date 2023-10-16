@@ -66,7 +66,7 @@ const Header = () => {
 	};
 
 	return (
-		<nav className="w-full bg-red-400 shadow-xl top-0 sticky z-10">
+		<nav className="w-full bg-red-400 shadow-xl top-0 sticky z-20">
 			<div className="p-4 mx-auto w-11/12 flex justify-between items-center">
 				<Logo />
 				<SearchBar />

@@ -6,7 +6,7 @@ import AuthContext from "../context/AuthContext";
 import Footer from "@/components/Footer";
 import StoreProvider from "@/context/StoreProvider";
 
-const sfProDisplayRegular = localFont({
+const myFont = localFont({
 	src: "../fonts/SFPRODISPLAYREGULAR.otf",
 });
 
@@ -22,7 +22,7 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body className={sfProDisplayRegular.className}>
+			<body className={myFont.className}>
 				<StoreProvider>
 					<AuthContext>
 						<Header />

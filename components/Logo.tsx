@@ -5,7 +5,7 @@ const Logo = () => {
 	return (
 		<Link
 			href="/"
-			className="text-xl text-green-700 italic font-black flex space-x-2"
+			className="text-xl text-emerald-700 font-extrabold flex space-x-2"
 		>
 			<h1 className="hidden lg:flex">QuickMart</h1>
 			<svg

@@ -77,25 +77,27 @@ export const footerLinks = [
 	{
 		title: "Shop",
 		links: [
-			{ name: "New Arrivals", url: "/categories/clothings" },
+			{ name: "New Arrivals", url: "/categories" },
 			{ name: "Clothing", url: "/categories/clothings" },
 			{ name: "Devices", url: "/categories/electronics" },
 			{ name: "Accessories", url: "/categories/accessories" },
+			{ name: "Cart", url: "/carts" },
+			{ name: "Orders", url: "/order" },
 		],
 	},
 	{
 		title: "Customer Service",
 		links: [
-			{ name: "Contact Us", url: "/contact" },
-			{ name: "Shipping & Returns", url: "/shipping-returns" },
-			{ name: "FAQ", url: "/faq" },
+			{ name: "Contact Us", url: "/#" },
+			{ name: "Shipping & Returns", url: "/#" },
+			{ name: "FAQ", url: "/#" },
 		],
 	},
 	{
 		title: "Company",
 		links: [
-			{ name: "About Us", url: "/about-us" },
-			{ name: "Careers", url: "/careers" },
+			{ name: "About Us", url: "/#" },
+			{ name: "Careers", url: "/#" },
 			{ name: "Privacy Policy", url: "/privacy-policy" },
 		],
 	},

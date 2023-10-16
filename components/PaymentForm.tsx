@@ -36,7 +36,7 @@ const PaymentForm = () => {
 	const { data: session } = useSession();
 	const handleCheckout = async () => {
 		const stripe = await stripePromise;
-		const response = await fetch("http://localhost:3000/api/checkout", {
+		const response = await fetch("/api/checkout", {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",

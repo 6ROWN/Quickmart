@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 import StoreProvider from "@/context/StoreProvider";
 
 const myFont = localFont({
-	src: "../fonts/SFPRODISPLAYREGULAR.otf",
+	src: "../fonts/sfpRegular.ttf",
 });
 
 export const metadata: Metadata = {
@@ -21,7 +21,7 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<html lang="en">
+		<html lang="en" suppressHydrationWarning={true}>
 			<body className={myFont.className}>
 				<StoreProvider>
 					<AuthContext>

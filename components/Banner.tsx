@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
 import CustomButton from "./CustomButton";
 import { carouselItems as banners } from "@/lib";
+import { useRouter } from "next/navigation";
 
 const PrevArrow: React.FC<{
 	onClick?: React.MouseEventHandler<HTMLButtonElement>;
@@ -51,6 +52,9 @@ const Banner = () => {
 		prevArrow: <PrevArrow />,
 		nextArrow: <NextArrow />,
 	};
+
+	const router = useRouter();
+
 	return (
 		<div className="w-full relative">
 			<Slider {...settings}>
@@ -74,7 +78,7 @@ const Banner = () => {
 							</h3>
 							<div>
 								<CustomButton
-									onClick={() => ""}
+									onClick={() => router.push("/categories")}
 									className="flex space-x-4 items-center text-"
 									variant="secondary"
 								>

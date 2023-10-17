@@ -31,8 +31,8 @@ export const POST = async (request: NextRequest) => {
 			payment_method_types: ["card"],
 			line_items: extractingItems,
 			mode: "payment",
-			success_url: `${process.env.NEXTAUTH_URL}/success`,
-			cancel_url: `${process.env.NEXTAUTH_URL}/cancel`,
+			success_url: `https://quickmarts.vercel.app/success`,
+			cancel_url: `https://quickmarts.vercel.app/cancel`,
 			metadata: {
 				email,
 			},
